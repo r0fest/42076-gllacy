@@ -5,34 +5,64 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-      <header class="main-header container">
-          <img src="" alt="logotype gllacy">
+      <header class="main-header">
+      	<div class="container">
+          <img src="" alt="logotype gllacy" class="logo">
           <nav class="header-navigation">
               <ul>
                   <li><a href="#">Каталог</a></li>
+                  <ul class="Catalog-menu">
+                  	<li>Новинки</li>
+                  	<li>Сливочные</li>
+                  	<li>Щербеты</li>
+                  	<li>Фруктовый лед</li>
+                  	<li>Мелорин</li>
+                  </ul>
                   <li><a href="#">Доставка и оплата</a></li>
                   <li><a href="#">О Компании</a></li>
               </ul>
           </nav>
-          <div class="header-search">
-              
-          </div>
-          <div class="header-login">
-              <p class="header-login-text">
-                  Вход    
-              </p>
-          </div>
-          <div class="header-basket">
-              <p class="header-basket-text">
-                  Пусто
-              </p>
-          </div>
-          <p class="header-graphic-work">
-              С 10 до 20, ежедневно
-          </p>
-          <p class="header-phone">
-              <a href="tel:+78124502525">8 812 450-25-25</a>
-          </p>
+          <div class="header-right">
+          	<div class="header-right-top">
+          		<div class="header-search">
+              		<div class="header-search-icon">
+              			
+              		</div>
+              		<div class="header-search-modal">
+              			<form action="" method="GET">
+              				<input type="search" name="search">
+						</form>
+              		</div>
+          		</div>
+          		<div class="header-login">
+             		<div class="header-login-icon">
+             			
+             		</div>
+              		<p class="header-login-text">
+                  		Вход    
+              		</p>
+          		</div>
+          		<div class="header-basket">
+             		<div class="header-basket-icon">
+             			
+             		</div>
+              		<p class="header-basket-text">
+                		Пусто
+             	 	</p>
+   	       		</div>
+			</div>
+   	      	<div class="header-right-bottom">
+    	    	<p class="header-graphic-work">
+        	    	С 10 до 20, ежедневно
+  	        	</p>
+    	      	<p class="header-phone">
+        	    	<a href="tel:+78124502525">
+        	    		8 812 450-25-25
+        	    	</a>
+  	        	</p>
+			</div>
+		  </div>
+	  	</div>
       </header>
       <!-- Задаем абсолютное позиционированние -->
       <div class="slidebar container">
