@@ -13,6 +13,7 @@
                   <li><a href="#">Каталог</a></li>
                   <ul class="Catalog-menu">
 					<li><a href="#">Новинки</a></li>
+					<li><a href="/catalog.html">Сливочные</a></li>
 					<li><a href="#">Щербеты</a></li>
 					<li><a href="#">Фруктовый лед</a></li>
 					<li><a href="#">Мелорин</a></li>
@@ -29,7 +30,7 @@
               		</div>
               		<div class="header-search-modal">
               			<form action="" method="GET">
-              				<input type="search" name="search">
+              				<input type="search" name="search" placeholder="Что ищем?">
 						</form>
               		</div>
           		</div>
@@ -40,6 +41,15 @@
               		<p class="header-login-text">
                   		Вход    
               		</p>
+              		<div class="header-login-form">
+              			<form action="" method="POST">
+              				<input type="mail" name="mail" placeholder="Электронная почта">
+              				<input type="password" name="password" placeholder="Пароль">
+              				<button type="submit" class="btn">Войти</button>
+              				<a href="#">Забыли пароль?</a>
+              				<a href="#">Новая регистрация</a>
+              			</form>
+              		</div>
           		</div>
           		<div class="header-basket">
              		<div class="header-basket-icon">
@@ -64,7 +74,8 @@
 	  	</div>
       </header>
       <!-- Задаем абсолютное позиционированние -->
-      <div class="slidebar container">
+      <div class="slidebar">
+      	<div class="container">
           <div class="slidebar-block">      
               <h1 class="slidevar-title">
                   Крем-брюле и пломбир с малиновым джемом
@@ -79,33 +90,39 @@
               <li><a href="№"></a></li>
               <li><a href="№"></a></li>
           </ul> 
+	  	</div>    
       </div> 
       <main class="container">
-          <article class="block-header">
-              <h2>
-                  Малинка даром!
-              </h2>
-              <p>
-                  При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
-              </p>
-              <a href="#" class="block-header-btn btn">
-                  Хочу варенье!
-              </a>
-          </article>
-          <article class="block-header">
-              <h2>
-                  Шоколадки даром!
-              </h2>
-              <p>
-                  При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
-              </p>
-              <a href="#" class="block-header-btn btn">
-                  Хочу шоколадки!
-              </a>
-          </article>
-          <article class="products">
-              <section class="product-info">
-                  <div class="product-hit"></div>
+          <div class="main-banner">
+			  <article class="block-header">
+				  <h2>
+					  Малинка даром!
+				  </h2>
+				  <p>
+					  При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
+				  </p>
+				  <a href="#" class="block-header-btn btn">
+					  Хочу варенье!
+				  </a>
+			  </article>
+			  <article class="block-header">
+				  <h2>
+					  Шоколадки даром!
+				  </h2>
+				  <p>
+					  При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
+				  </p>
+				  <a href="#" class="block-header-btn btn">
+					  Хочу шоколадки!
+				  </a>
+			  </article>
+		  </div>
+          <section class="products">
+              <div class="product-item">
+                  <div class="product-item-img">
+                  	<div class="product-hit"></div>
+                  	<img src="" alt="ice cream">
+				  </div>
                   <p class="product-price">
                       310 Р/кг
                   </p>
@@ -114,9 +131,12 @@
                           Сливочное с апельсиновым джемом и цитрусовой стружкой
                       </a>
                   </p>
-              </section>
-              <section class="product-info">
-                  <div class="product-hit"></div>
+              </div>
+              <div class="product-item">
+                  <div class="product-item-img">
+                  	<div class="product-hit"></div>
+                  	<img src="" alt="ice cream">
+				  </div>
                   <p class="product-price">
                       380 Р/кг
                   </p>
@@ -125,9 +145,12 @@
                           Сливочное-кофейное с кусочками шоколада
                       </a>
                   </p>
-              </section>
-              <section class="product-info">
-                  <div class="product-hit"></div>
+              </div>
+              <div class="product-item">
+                  <div class="product-item-img">
+                  	<div class="product-hit"></div>
+                  	<img src="" alt="ice cream">
+				  </div>
                   <p class="product-price">
                       355 Р/кг
                   </p>
@@ -136,9 +159,12 @@
                           Сливочное-клубничное с присыпкой из белого шоколада
                       </a>
                   </p>
-              </section>
-              <section class="product-info">
-                  <div class="product-hit"></div>
+              </div>
+              <div class="product-item">
+                  <div class="product-item-img">
+                  	<div class="product-hit"></div>
+                  	<img src="" alt="ice cream">
+				  </div>
                   <p class="product-price">
                       415 Р/кг
                   </p>
@@ -147,8 +173,8 @@
                           Сливочное крем-брюле с карамельной подливкой
                       </a>
                   </p>
-              </section>
-          </article>
+              </div>
+          </section>
           <div class="information">
               <h3 class="information-title">
                   Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес
@@ -174,23 +200,25 @@
                  </p>
              </div>
           </div>
-          <aside class="blog">
-              <p>Новое в нашем блоге</p>
-              <p>
-                 <a href="#">
-                      10 способов сервировки фруктовых щербетов к столу
-                  </a>
-              </p>
-          </aside>
-          <aside class="delivery">
-              <form action="" method="POST">
-                  <p>
-                      Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
-                  </p>
-                  <input type="text" name="mail">
-                  <button type="submit" class="btn">Отправить</button>
-              </form>
-          </aside>
+          <div class="blog-subscribe">
+			  <aside class="blog">
+				  <p>Новое в нашем блоге</p>
+				  <p>
+					 <a href="#">
+						  10 способов сервировки фруктовых щербетов к столу
+					  </a>
+				  </p>
+			  </aside>
+			  <aside class="delivery">
+				  <form action="" method="POST">
+					  <p>
+						  Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
+					  </p>
+					  <input type="text" name="mail">
+					  <button type="submit" class="btn">Отправить</button>
+				  </form>
+			  </aside>
+		  </div>
       </main>
       <div class="adress">
           <div class="container">
@@ -211,10 +239,23 @@
                   <button class="btn">
                       Форма обратной связи
                   </button>
+                  <div class="dialog-modal">
+                  	<div class="dialog-close">
+                  		
+                  	</div>
+                  	<p>Мы обязательно вам ответим!</p>
+                  	<form action="" method="POST">
+                  		<input type="text" name="name" placeholder="Как вас зовут?">
+                  		<input type="mail" name="mail" placeholder="Ваша почта для ответа">
+                  		<textarea name="text-blog" cols="30" rows="7">напишите что нибудь...</textarea>
+                  		<button class="btn" type="submit">Отправить</button>
+                  	</form>
+                  </div>
               </div>
           </div>
       </div> 
-      <footer class="main-footer container">
+      <footer class="main-footer">
+      	<div class="container">
           <section class="footer-social">
               <ul>
                   <li><a href="#">Twitter</a></li>
@@ -262,6 +303,7 @@
                       </a>&copy;2016
               </p>
           </section>
+	  	</div>
       </footer>                          
   </body>
 </html>
