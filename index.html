@@ -94,7 +94,7 @@
       </div> 
       <main class="container">
           <div class="main-banner">
-			  <article class="block-header">
+			  <article class="block-header banner-raspberries">
 				  <h2>
 					  Малинка даром!
 				  </h2>
@@ -105,7 +105,7 @@
 					  Хочу варенье!
 				  </a>
 			  </article>
-			  <article class="block-header">
+			  <article class="block-header banner-chocolate">
 				  <h2>
 					  Шоколадки даром!
 				  </h2>
@@ -118,21 +118,20 @@
 			  </article>
 		  </div>
           <section class="products">
-              <div class="product-item">
+              <article class="product-item">
                   <div class="product-item-img">
-                  	<div class="product-hit"></div>
                   	<img src="" alt="ice cream">
 				  </div>
                   <p class="product-price">
                       310 Р/кг
                   </p>
-                  <p class="product-name">
+                  <h3 class="product-name">
                       <a href="#">
                           Сливочное с апельсиновым джемом и цитрусовой стружкой
                       </a>
-                  </p>
-              </div>
-              <div class="product-item">
+                  </h3>
+              </article>
+              <article class="product-item">
                   <div class="product-item-img">
                   	<div class="product-hit"></div>
                   	<img src="" alt="ice cream">
@@ -140,13 +139,13 @@
                   <p class="product-price">
                       380 Р/кг
                   </p>
-                  <p class="product-name">
+                  <h3 class="product-name">
                       <a href="#">
                           Сливочное-кофейное с кусочками шоколада
                       </a>
-                  </p>
-              </div>
-              <div class="product-item">
+                  </h3>
+              </article>
+              <article class="product-item">
                   <div class="product-item-img">
                   	<div class="product-hit"></div>
                   	<img src="" alt="ice cream">
@@ -154,13 +153,13 @@
                   <p class="product-price">
                       355 Р/кг
                   </p>
-                  <p class="product-name">
+                  <h3 class="product-name">
                       <a href="#">
                           Сливочное-клубничное с присыпкой из белого шоколада
                       </a>
-                  </p>
-              </div>
-              <div class="product-item">
+                  </h3>
+              </article>
+              <article class="product-item">
                   <div class="product-item-img">
                   	<div class="product-hit"></div>
                   	<img src="" alt="ice cream">
@@ -168,12 +167,12 @@
                   <p class="product-price">
                       415 Р/кг
                   </p>
-                  <p class="product-name">
-                      <a href="#">
-                          Сливочное крем-брюле с карамельной подливкой
-                      </a>
-                  </p>
-              </div>
+                  <h3 class="product-name">
+                  	<a href="#">
+                  		Сливочное крем-брюле с карамельной подливкой
+                  	</a>  
+                  </h3>
+              </article>
           </section>
           <div class="information">
               <h3 class="information-title">
@@ -201,15 +200,15 @@
              </div>
           </div>
           <div class="blog-subscribe">
-			  <aside class="blog">
+			  <div class="blog">
 				  <p>Новое в нашем блоге</p>
 				  <p>
 					 <a href="#">
 						  10 способов сервировки фруктовых щербетов к столу
 					  </a>
 				  </p>
-			  </aside>
-			  <aside class="delivery">
+			  </div>
+			  <div class="delivery">
 				  <form action="" method="POST">
 					  <p>
 						  Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
@@ -217,46 +216,47 @@
 					  <input type="text" name="mail">
 					  <button type="submit" class="btn">Отправить</button>
 				  </form>
-			  </aside>
+			  </div>
 		  </div>
       </main>
-      <div class="adress">
-          <div class="container">
-              <div class="adress-block">
-                  <p class="adress-text-header">
-                      Адрес главного офиса и офлайн магазина:
-                      <span>
-                          ул. Большая Конюшенная 19/8, Санкт-Петербург
-                      </span>
-                  </p>
-                  <p class="adress-text-footer">
-                      Для заказов по телефону:
-                      <a href="tel:+78124502525">
-                          8 812 450-25-25
-                      </a>
-                      (с 10 до 20 ежедневно)
-                  </p>
-                  <button class="btn">
-                      Форма обратной связи
-                  </button>
-                  <div class="dialog-modal">
-                  	<div class="dialog-close">
-                  		
-                  	</div>
-                  	<p>Мы обязательно вам ответим!</p>
-                  	<form action="" method="POST">
-                  		<input type="text" name="name" placeholder="Как вас зовут?">
-                  		<input type="mail" name="mail" placeholder="Ваша почта для ответа">
-                  		<textarea name="text-blog" cols="30" rows="7">напишите что нибудь...</textarea>
-                  		<button class="btn" type="submit">Отправить</button>
-                  	</form>
-                  </div>
-              </div>
-          </div>
-      </div> 
+      <div class="main-contact">
+  	  	<img src="" alt="">
+  	  	<div class="container">
+	  		<div class="address">
+				<p>
+					Адрес главного офиса и офлайн магазина:<br>
+					ул. Большая Конюшенная 19/8, Санкт-Петербург
+				</p>
+				<p>
+					Для заказов по телефону:<br>
+					8 812 450-25-25 (с 10 до 20 ежедневно)
+				</p>
+				<a class="btn" href="#">
+					Форма обратной связи
+				</a>
+				<div class="form-feedback">
+					<form action="#" method="post">
+						<p>
+							Мы обязательно вам ответим!
+						</p>
+						<label for="name">
+							<input type="text" id="name" placeholder="Как вас зовут?">
+						</label>
+						<label for="e-mail">
+							<input type="text" id="e-mail" placeholder="Ваша почта для ответа?">
+						</label>
+						<label>
+							<textarea rows="5" placeholder="Ваш комментарий"></textarea>
+						</label>
+						<input type="submit" value="Отправить">
+					</form> 
+				</div>
+			</div>	
+  		</div>
+	  </div>
       <footer class="main-footer">
       	<div class="container">
-          <section class="footer-social">
+          <div class="footer-social">
               <ul>
                   <li><a href="#">Twitter</a></li>
               </ul>
@@ -269,8 +269,8 @@
               <ul>
                   <li><a href="#">Vkontakte</a></li>
               </ul>
-          </section>
-          <section class="footer-link-site">
+          </div>
+          <div class="footer-link-site">
               <p>
                   <a href="#">
                       Для поставщиков
@@ -291,8 +291,8 @@
                       Экологические стандарты
                   </a>
               </p>
-          </section>
-          <section class="footer-developed">
+          </div>
+          <div class="footer-developed">
               <a href="htmlacademy.ru">
                   <img src="" alt="HTML Academy logotype">
               </a>
@@ -302,7 +302,7 @@
                           HTML Academy
                       </a>&copy;2016
               </p>
-          </section>
+          </div>
 	  	</div>
       </footer>                          
   </body>
