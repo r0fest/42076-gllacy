@@ -7,10 +7,10 @@
   </head>
   <body>
   	  <header class="main-header">
-      	<div class="container">
+      	<div class="container clearfix">
           <a href="#"  class="logo">
-          	<img src="img/logo_index.svg" alt="logotype gllacy">
-		  </a>
+          	<img src="img/logo_index.svg" alt="logotype gllacy" class="logo-index">
+		      </a>
           <nav class="header-navigation">
               <ul>
                   <li><span>Каталог</span></li>
@@ -18,26 +18,56 @@
                   <li><a href="#">О Компании</a></li>
               </ul>
           </nav>
-          <div class="header-search">
-
-          </div>
-          <div class="header-login">
-              <p class="header-login-text">
-                  Вход
-              </p>
-          </div>
-          <div class="header-basket">
-              <p class="header-basket-text on-product-basket">
+          <div class="header-right">
+            <div class="header-right-top clearfix">
+              <div class="header-search">
+                  <div class="header-search-icon">
+                    
+                  </div>
+                  <div class="header-search-modal hover">
+                    <form action="" method="GET">
+                      <input type="search" name="search" placeholder="Что ищем?">
+                    </form>
+                  </div>
+              </div>
+              <div class="header-login">
+                <div class="header-login-icon">
+                  
+                </div>
+                  <a class="header-login-text">
+                      Вход    
+                  </a>
+                  <div class="header-login-form hover">
+                    <form action="" method="POST">
+                      <input type="mail" name="mail" placeholder="Электронная почта">
+                      <input type="password" name="password" placeholder="Пароль">
+                      <button type="submit" class="btn">Войти</button>
+                      <a href="#">Забыли пароль?</a>
+                      <a href="#">Новая регистрация</a>
+                    </form>
+                  </div>
+              </div>
+              <div class="header-basket header-basket-complate">
+                <div class="header-basket-icon">
+                  
+                </div>
+                <p class="header-basket-text">
                   2 товара
+                </p>
+              </div>
+            </div>
+            <div class="header-right-bottom">
+              <p class="header-graphic-work">
+                С 10 до 20, ежедневно
               </p>
+              <p class="header-phone">
+                <a href="tel:+78124502525">
+                  8 812 450-25-25
+                </a>
+              </p>
+            </div>
           </div>
-          <p class="header-graphic-work">
-              С 10 до 20, ежедневно
-          </p>
-          <p class="header-phone">
-              <a href="tel:+78124502525">8 812 450-25-25</a>
-          </p>
-	  	</div>
+	  	  </div>
       </header>
       <main class="container">
       	<div class="breadcrumbs">
@@ -50,8 +80,8 @@
       	<h1 class="main-title">
       		Сливочное мороженное
       	</h1>
-      	<form action="" method="POST">
-      		<label>
+      	<form action="" method="POST" class="sort-form clearfix">
+      		<label class="f-select">
       			Сортировка:
       			<div class="form-select fblock">
       				<select name="sort">
@@ -62,32 +92,32 @@
       						По цене
       					</option>
       				</select>
-				</div>
+				    </div>
       		</label>
-      		<label>
-				Цена:
-     			<span class="start-price">
-     				100
-     			</span>
-     			руб. -
-     			<span class="finish-price">
-     				500
-     			</span>
-     			руб.
+      		<label class="f-range">
+				    Цена:
+     			  <span class="start-price">
+     				 100
+       			</span>
+         			руб. -
+      			<span class="finish-price">
+       				500
+     	  		</span>
+     	  	   	руб.
       			<div class="form-range fblock">
       				<input type="range" min="100" max="500" multiple value="100,500">
-				</div>
+				    </div>
       		</label>
-      		<label>
+      		<label class="f-radio">
       			Жирность:
       			<div class="form-radio fblock">
       				<input type="radio" name="fatness" valeu="0">0%
       				<input type="radio" name="fatness" value="+10" checked>до 10%
       				<input type="radio" name="fatness" value="+30">до 30%
       				<input type="radio" name="fatness" value="30+">выше 30%
-				</div>
+				    </div>
       		</label>
-      		<label>
+      		<label class="f-checkbox">
       			Наполнители:
       			<div class="form-checkbox">
       				<input type="checkbox" checked>шоколадные
@@ -99,7 +129,7 @@
       		</label>
       		<button class="form-btn" type="submit">Применить</button>
       	</form>
-      	<section class="products">
+      	<section class="products clearfix">
               <article class="product-item">
                   <div class="product-item-img">
                   	<img src="img/product1_index.jpg" alt="ice cream" width="267" height="267">
@@ -296,7 +326,8 @@
           	</ul>
           </div>
       </main>
-      <footer class="main-footer container">
+      <footer class="main-footer">
+        <div class="container">
           <div class="footer-social">
               <ul>
                   <li><a href="#">Twitter</a></li>
@@ -313,39 +344,42 @@
           </div>
           <div class="footer-link-site">
               <ul>
-              	<li>
-               		<a href="#">
-                		Для поставщиков
-					</a>
-				</li>
-              	<li>
-              		<a href="#">
-                    	Наши документы
-					</a>
-				</li>
-              	<li>
-                     <a href="#">
-                     	О производстве
-					 </a>
-				</li>
-              	<li>
-                     <a href="#">
-                     	Экологические стандарты
-					 </a>
-				</li>
-			  </ul>
+                <li>
+                  <a href="#">
+                    Для поставщиков
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Наши документы
+                  </a>
+                </li>
+                <br>
+                <li>
+                  <a href="#">
+                    О производстве
+                  </a> 
+                </li>
+                <li>
+                  <a href="#">
+                    Экологические стандарты
+                  </a> 
+                </li>
+                <br>
+              </ul>
           </div>
           <div class="footer-developed">
               <a href="htmlacademy.ru">
                   <img src="img/htmlacademy_logo.svg" alt="HTML Academy logotype">
               </a>
               <p>
-                  Сделано в
+                  Сделано в 
                       <a href="http://htmlacademy.ru">
                           HTML Academy
                       </a>&copy;2016
               </p>
           </div>
-      </footer>
+      </div>
+      </footer>  
   </body>
 </html>

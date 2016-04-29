@@ -3,16 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700italic,700,900,900italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
       <header class="main-header">
-      	<div class="container">
-          <img src="img/logo_index.svg" alt="logotype gllacy">		
+      	<div class="container clearfix">
+          <img src="img/logo_index.svg" alt="logotype gllacy" class="logo-index">		
           <nav class="header-navigation">
               <ul>
                   <li><a href="#">Каталог</a></li>
-                  <ul class="Catalog-menu">
+                  <ul class="Catalog-menu hover">
 					<li><a href="#">Новинки</a></li>
 					<li><a href="/catalog.html">Сливочные</a></li>
 					<li><a href="#">Щербеты</a></li>
@@ -24,12 +26,12 @@
               </ul>
           </nav>
           <div class="header-right">
-          	<div class="header-right-top">
+          	<div class="header-right-top clearfix">
           		<div class="header-search">
               		<div class="header-search-icon">
               			
               		</div>
-              		<div class="header-search-modal">
+              		<div class="header-search-modal hover">
               			<form action="" method="GET">
               				<input type="search" name="search" placeholder="Что ищем?">
 						</form>
@@ -42,7 +44,7 @@
               		<a class="header-login-text">
                   		Вход    
               		</a>
-              		<div class="header-login-form">
+              		<div class="header-login-form hover">
               			<form action="" method="POST">
               				<input type="mail" name="mail" placeholder="Электронная почта">
               				<input type="password" name="password" placeholder="Пароль">
@@ -94,7 +96,7 @@
 	  	</div>    
       </div> 
       <main class="container">
-          <div class="main-banner">
+          <div class="main-banner clearfix">
 			  <article class="block-header banner-raspberries">
 				  <h2>
 					  Малинка даром!
@@ -118,13 +120,13 @@
 				  </a>
 			  </article>
 		  </div>
-          <section class="products">
+          <section class="products clearfix">
               <article class="product-item">
                   <div class="product-item-img">
                   	<img src="img/product1_index.jpg" alt="ice cream" width="267" height="267">
 				  </div>
                   <p class="product-price">
-                      310 Р/кг
+                      310 &#8381/кг
                   </p>
                   <h3 class="product-name">
                       <a href="#">
@@ -138,7 +140,7 @@
                   	<img src="img/product2_index.jpg" alt="ice cream" width="267" height="267">
 				  </div>
                   <p class="product-price">
-                      380 Р/кг
+                      380 &#8381/кг
                   </p>
                   <h3 class="product-name">
                       <a href="#">
@@ -152,7 +154,7 @@
                   	<img src="img/product3_index.jpg" alt="ice cream" width="267" height="267">
 				  </div>
                   <p class="product-price">
-                      355 Р/кг
+                      355 &#8381/кг
                   </p>
                   <h3 class="product-name">
                       <a href="#">
@@ -166,7 +168,7 @@
                   	<img src="img/product4_index.jpg" alt="ice cream" width="267" height="267">
 				  </div>
                   <p class="product-price">
-                      415 Р/кг
+                      415 &#8381/кг
                   </p>
                   <h3 class="product-name">
                   	<a href="#">
@@ -175,7 +177,7 @@
                   </h3>
               </article>
           </section>
-          <div class="information">
+          <div class="information clearfix">
               <h3 class="information-title">
                   Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес
               </h3>
@@ -200,7 +202,7 @@
                  </p>
              </div>
           </div>
-          <div class="blog-subscribe">
+          <div class="blog-subscribe clearfix">
 			  <div class="blog">
 				  <p>Новое в нашем блоге</p>
 				  <p>
@@ -222,7 +224,7 @@
       </main>
       <div class="main-contact">
   	  	<img src="" alt=""> <!-- MAP -->
-  	  	<div class="container">
+  	  	<div class="container clearfix">
 	  		<div class="address">
 				<p>
 					Адрес главного офиса и офлайн магазина:<br>
@@ -235,7 +237,7 @@
 				<a class="btn" href="#">
 					Форма обратной связи
 				</a>
-				<div class="form-feedback">
+				<div class="form-feedback hover">
 					<form action="#" method="post">
 						<p>
 							Мы обязательно вам ответим!
@@ -283,6 +285,7 @@
                     	Наши документы
 					</a>
 				</li>
+				<br>
               	<li>
                      <a href="#">
                      	О производстве
@@ -293,6 +296,7 @@
                      	Экологические стандарты
 					 </a> 
 				</li>
+				<br>
 			  </ul>
           </div>
           <div class="footer-developed">

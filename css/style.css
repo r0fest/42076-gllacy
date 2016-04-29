@@ -3,14 +3,16 @@ body {
   line-height: 22px;
   color: #fff;
   font-weight: normal;
-  font-family: "Roboto";
+  font-family: "Roboto", 'Arial', sans-serif;
+  background-color: #849d8f;
 }
 
 h1 {
   font-size: 60px;
-  line-height: 60,35px;
+  line-height: 60.35px;
   color: #fff;
   font-weight: bold;
+  margin: 0;
 }
 
 h2 {
@@ -18,4 +20,274 @@ h2 {
   line-height: 41px;
   color: #000;
   font-weight: bold;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.container {
+  padding-left: 27px;
+  padding-right: 27px;
+  width: 1146px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid red;
+}
+
+.hover {
+  display: none;
+}
+
+.main-header {
+  outline: 1px solid red;
+}
+
+.logo-index {
+  outline: 1px solid yellow;
+  float: left;
+}
+
+.header-navigation {
+  float: left;
+}
+
+.header-navigation ul {
+  font-size: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;  
+  outline: 1px solid yellow;
+}
+
+.header-navigation ul li {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 18px;
+  vertical-align: top;
+}
+
+.header-navigation ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.header-right {
+  float: right;
+  outline: 1px solid yellow;
+}
+
+.header-search {
+  float: left;
+}
+
+.header-login {
+  float: left;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.header-basket {
+  float: right;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;  
+}
+
+.header-right-bottom {
+  display: inline-block;
+  text-align: right;
+}
+
+.header-graphic-work {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.header-phone a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 900;
+}
+
+.slidebar {
+  outline: 1px solid red;
+}
+
+.block-header {
+  width: 560px;
+}
+
+.banner-raspberries {
+  outline: 1px solid yellow;
+  float: left;
+}
+
+.banner-chocolate {
+  outline: 1px solid yellow;
+  float: right;
+}
+
+.products {
+  outline: 1px solid yellow;
+}
+
+.product-item {
+  outline: 1px solid green;
+  float: left;
+  width: 267px;
+  margin-right: 26px;
+}
+
+.product-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.information {
+  outline: 1px solid yellow;
+}
+
+.information-block:nth-child(1n) {
+  float: left;
+  width: 540px;
+  margin-left: 20px;
+  outline: 1px solid green;
+}
+
+.information-block:nth-child(2n) {
+  float: right;
+  width: 540px;
+  margin-right: 20px;
+  outline: 1px solid green;
+}
+
+.blog-subscribe {
+  outline: 1px solid yellow;
+}
+
+.blog {
+  float: left;
+  width: 560px;
+  outline: 1px solid green;
+}
+
+.delivery {
+  float: right;
+  width: 560px;
+  outline: 1px solid green;
+}
+
+.main-contact {
+  outline: 1px solid red;
+}
+
+.address {
+  float: right;
+  outline: 1px solid yellow;
+}
+
+.main-footer {
+  outline: 1px solid red;
+}
+
+.footer-social {
+  outline: 1px solid yellow;
+  float: left;
+}
+
+.footer-social ul {
+  outline: 1px solid green;
+  float: left;
+}
+
+.footer-link-site {
+  outline: 1px solid yellow;
+  float: left;
+}
+
+.footer-link-site ul li {
+  display: inline-block;
+  text-align: left;
+}
+
+.footer-developed {
+  float: right;
+  outline: 1px solid yellow;
+}
+
+.breadcrumbs {
+  outline: 1px solid yellow;
+}
+
+.breadcrumbs ul {
+  font-size: 0;
+  list-style: none;
+}
+
+.breadcrumbs ul li {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.main-title {
+  outline: 1px solid yellow;
+}
+
+.sort-form {
+  outline: 1px solid yellow;
+}
+
+.f-select {
+  outline: 1px solid green;
+  float: left;
+}
+
+.f-range {
+  outline: 1px solid green;
+  float: left;
+}
+
+.f-radio {
+  outline: 1px solid green;
+  float: left;  
+}
+
+.f-checkbox {
+  outline: 1px solid green;
+  clear: both;
+  float: left;
+}
+
+.form-btn {
+  outline: 1px solid green;
+  float: left;
+}
+
+.navigation-pages {
+  text-align: right;
+  outline: 1px solid yellow;
+}
+
+.navigation-pages ul {
+  font-size: 0;
+  list-style: none;
+}
+
+.navigation-pages ul li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 18px;
 }
