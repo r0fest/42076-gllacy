@@ -83,52 +83,56 @@
       		Сливочное мороженное
       	</h1>
       	<form action="" method="POST" class="sort-form clearfix">
-      		<label class="f-select">
-      			Сортировка:
-      			<div class="form-select fblock">
-      				<select name="sort">
-      					<option value="popular">
-      						По популярности
-      					</option>
-      					<option value="price">
-      						По цене
-      					</option>
-      				</select>
-				    </div>
-      		</label>
-      		<label class="f-range">
-				    Цена:
-     			  <span class="start-price">
-     				 100
-       			</span>
-         			руб. -
-      			<span class="finish-price">
-       				500
-     	  		</span>
-     	  	   	руб.
-      			<div class="form-range fblock">
-      				<input type="range" min="100" max="500" multiple value="100,500">
-				    </div>
-      		</label>
-      		<label class="f-radio">
-      			Жирность:
-      			<div class="form-radio fblock">
-      				<input type="radio" name="fatness" valeu="0">0%
-      				<input type="radio" name="fatness" value="+10" checked>до 10%
-      				<input type="radio" name="fatness" value="+30">до 30%
-      				<input type="radio" name="fatness" value="30+">выше 30%
-				    </div>
-      		</label>
-      		<label class="f-checkbox">
+          <div class="f-select">
+        		<label>
+        		  Сортировка:
+        			<div class="form-select fblock">
+        				<select name="sort">
+        					<option value="popular">
+        						По популярности
+        					</option>
+        					<option value="price">
+        						По цене
+        					</option>
+        				</select>
+  				    </div>
+        		</label>
+          </div>
+          <div class="f-range"> 
+        		<label>
+  				    Цена:
+       			  <span class="start-price">
+       				 100
+         			</span>
+           			руб. -
+        			<span class="finish-price">
+         				500
+       	  		</span>
+       	  	   	руб.
+        			<div class="form-range fblock">
+        				<input type="range" min="100" max="500" multiple value="100,500">
+  				    </div>
+        		</label>
+          </div>
+          <div class="f-radio">  
+        		Жирность:
+        		<div class="form-radio fblock">
+        			<label><input type="radio" name="fatness" valeu="0">0%</label>
+        			<label><input type="radio" name="fatness" value="+10" checked>до 10%</label>
+        			<label><input type="radio" name="fatness" value="+30">до 30%</label>
+        			<label><input type="radio" name="fatness" value="30+">выше 30%</label>
+  				   </div>
+          </div>
+      		<div class="f-checkbox">
       			Наполнители:
       			<div class="form-checkbox">
-      				<input type="checkbox" checked>шоколадные
-      				<input type="checkbox" checked>сахарныеприсыпки
-      				<input type="checkbox">фрукты
-      				<input type="checkbox">сиропы
-      				<input type="checkbox">джемы
+      				<label><input type="checkbox" checked>шоколадные</label>
+      				<label><input type="checkbox" checked>сахарныеприсыпки</label>
+      				<label><input type="checkbox">фрукты</label>
+      				<label><input type="checkbox">сиропы</label>
+      				<label><input type="checkbox">джемы</label>
       			</div>
-      		</label>
+      		</div>
       		<button class="form-btn" type="submit">Применить</button>
       	</form>
       	<section class="products clearfix">
@@ -329,7 +333,7 @@
           </div>
       </main>
       <footer class="main-footer">
-        <div class="container">
+        <div class="container clearfix">
           <div class="footer-social">
               <ul>
                   <li><a href="#">Twitter</a></li>
