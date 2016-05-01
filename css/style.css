@@ -247,32 +247,41 @@ p {
 
 .sort-form {
   outline: 1px solid yellow;
+  width: 868px;
 }
 
 .f-select {
   outline: 1px solid green;
   float: left;
+  width: 193;
+  margin-right: 15px;
 }
 
 .f-range {
   outline: 1px solid green;
   float: left;
+  width: 219px;
+  margin-right: 15px;
 }
 
 .f-radio {
   outline: 1px solid green;
   float: left;  
+  width: 414px;
 }
 
 .f-checkbox {
   outline: 1px solid green;
   clear: both;
   float: left;
+  width: 702px;
+  margin-right: 13px;
 }
 
 .form-btn {
   outline: 1px solid green;
   float: left;
+  width: 144px;
 }
 
 .navigation-pages {
