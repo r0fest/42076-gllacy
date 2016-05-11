@@ -316,6 +316,45 @@ body > input[type="radio"] {
   position: relative;
 }
 
+.product-item-hover {
+  display: none;
+
+  position: absolute;
+  top: -13px;
+  left: -13px;
+  right: -13px;
+  bottom: -80px;
+  z-index: 3;
+
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, .2);
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, .4);
+}
+
+.product-item-hover-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 16px;
+  text-align: center;
+}
+
+.product-item-hover-content a.btn {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.product-item:hover .product-item-hover {
+  display: block;
+}
+
+.product-item:hover .product-name > a {
+  border: none;
+}
+
 .inner-page .product-item {
   margin-top: 35px;
 }
@@ -660,35 +699,43 @@ body > input[type="radio"] {
   background-image: url('../img/vk_social.svg');
 }
 
-.footer-link-site {
+.footer-site {
   margin: 0 auto;
 
   text-align: center;
   
 }
 
-.footer-link-site ul {
+.footer-site-list {
   display: inline-block;
   margin-top: 9px;
   padding-left: 0;
 }
 
-.footer-link-site ul:first-child {
+.fsl-left:first-child {
   margin-right: 5px;
 } 
 
-.footer-link-site ul:last-child {
+.fsl-right:last-child {
   margin-right: 28px;
 } 
 
-.footer-link-site ul li {
+.footer-site-list li {
   padding-left: 22px;
 
   text-align: left;
   list-style: none;
 }
 
-.footer-link-site ul li a {
+.fsl-left li:first-child {
+  background: url('../img/icon_love.svg') no-repeat 0 6px;
+}
+
+.fsl-left li:first-child > a {
+  font-weight: bold;
+}
+
+.footer-site-list li a {
   color: #fff;
   font-size: 13px;
   font-weight: 400;
@@ -698,12 +745,9 @@ body > input[type="radio"] {
   border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
-.footer-link-site ul li:hover {
-  background: url('../img/icon_love.svg') no-repeat 0 6px;
-}
-
-.footer-link-site ul li:hover a {
-  font-weight: bold;
+.footer-site-list li:hover a {
+  color: #ffbc9e;
+  border-bottom: 1px solid rgba(249, 172, 159, 0.3);
 }
 
 .footer-developed {
@@ -1089,10 +1133,87 @@ body > input[type="radio"] {
   box-shadow: inset 0px 2px 1px 0 #696969;
 }
 
-.navigation-page {
-  text-align: right;
+.navigation-page-container {
   margin-top: 84px;
-  margin-bottom: 48px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.navigation-page {
+  float: right;
+  min-width: 188px;
+  padding: 0;
+  font-size: 0;
+  position: relative;  
+}
+
+.navigation-page ul {
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-page li {
+  display: inline;
+  
+  text-align: center;
+}
+
+.navigation-page .back {
+  display: inline-block;
+  width: 9px;
+  height: 14px;
+  background-image: url("../img/prev_page.svg");
+  background-repeat: no-repeat;
+  margin-right: 12px;
+  margin-left: 0;
+  vertical-align: middle;
+}
+
+.navigation-page .disabled {
+  opacity: .2;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; 
+}
+
+.navigation-page .page {
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  border-radius: 50%;
+  width: 26px;
+  height: 21px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 16px;
+  padding-top: 5px;
+  text-decoration: none;
+  margin-left: 3px;  
+}
+
+.navigation-page .active {
+  background-color: #fff;
+  color: #353535;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -o-user-select: none;  
+  -ms-user-select: none;  
+  -moz-user-select: none; 
+}
+
+.navigation-page .next {
+  display: inline-block;
+  width: 9px;
+  height: 14px;
+  background-image: url("../img/next_page.svg");
+  background-repeat: no-repeat;
+  margin-left: 16px;
+  vertical-align: middle;  
+}
+
+.navigation-page .page:hover {
+  background-color: rgba(248,247,244,0.2);  
 }
 
 .np-list {
@@ -1405,7 +1526,7 @@ body > input[type="radio"] {
   padding: 20px 15px;
 
   position: absolute;
-  top: 34px;
+  top: 36px;
   left: -310px;  
   z-index: 2;
 
@@ -1451,7 +1572,7 @@ body > input[type="radio"] {
 
   position: absolute;
   left: -183px;
-  top: 34px;
+  top: 36px;
   z-index: 2;
 
   background-color: #f8f7f4;
@@ -1673,7 +1794,7 @@ textarea:focus {
   float: right;
   cursor: pointer;
   position: relative;
-  padding-bottom: 11px;
+  padding-bottom: 4px;
 }
 
 .header-basket-form {
