@@ -105,10 +105,6 @@ body > input[type="radio"] {
   padding-left: 27px;
 }
 
-.hover {
-  display: none;
-}
-
 .logo-index {
   float: left;
   margin-top: 9px;
@@ -391,6 +387,7 @@ body > input[type="radio"] {
   position: absolute;
   top: 212px;
   left: -3px;
+  z-index: 4;
 
   text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
 }
@@ -414,6 +411,9 @@ body > input[type="radio"] {
 }
 
 .product-name > a { 
+  position: relative;
+  z-index: 4;
+
   color: #fff;
   font-size: 16px;
   font-weight: 600;
