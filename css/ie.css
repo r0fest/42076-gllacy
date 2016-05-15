@@ -1,0 +1,13 @@
+* {
+	background-color: black;
+}
+
+body {
+	background-color: black;
+}
+
+.btn {
+	font-size: 0px;
+	border-radius: 0px;
+	padding: 70px!important;
+}
