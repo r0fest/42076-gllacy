@@ -501,14 +501,14 @@ body > input[type="radio"] {
 }
 
 .information {
-  margin-top: 39px;
-  margin-bottom: 38px;
+  margin-top: 37px;
+  margin-bottom: 40px;
 
   background-color: #f1e5ce;
   background-image: url("../img/bg_info.jpg");
   background-repeat: repeat;
   background-position: -1px -5px;
-  padding: 24px 20px 1px;
+  padding: 24px 20px 7px;
   border-radius: 20px;
 }
 
@@ -524,7 +524,7 @@ body > input[type="radio"] {
   color: #323232;
   font-weight: 600;
   margin-top: 0;
-  margin-bottom: 6px;
+  margin-bottom: 9px;
   padding-right: 40px;
 }
 
@@ -535,7 +535,7 @@ body > input[type="radio"] {
 
 .information-block:nth-child(1n) {
   /*float: right;*/
-  width: 482px;
+  width: 480px;
   /*margin-right: 20px;*/
   margin-bottom: 8px;
   padding-left: 80px;
@@ -550,7 +550,7 @@ body > input[type="radio"] {
 }
 
 .information-block p {
-  padding-top: 15px;
+  padding-top: 12px;
 
   color: #323232;
   font-size: 16px;
@@ -670,7 +670,7 @@ body > input[type="radio"] {
 }
 
 .main-contact {
-  margin-top: 38px;
+  margin-top: 40px;
 }
 
 .main-contact {
@@ -690,7 +690,7 @@ body > input[type="radio"] {
   padding-right: 25px;
   padding-left: 25px;
   padding-top: 30px;
-  padding-bottom: 24px;
+  padding-bottom: 30px;
   margin-top: 60px;
   margin-bottom: 60px;
   position: absolute;
@@ -924,19 +924,19 @@ body > input[type="radio"] {
 }
 
 .form-select {
-  margin-top: 3px;
+  margin-top: 1px;
 }
 
 .form-select select {
-  padding-top: 9px;
+  padding-top: 7px;
   padding-right: 50px;
-  padding-bottom: 9px;
+  padding-bottom: 7px;
   padding-left: 15px;
 
   color: #fff;
   font-size: 16px;
   font-weight: 600;
-  line-height: 18px;  
+  line-height: 24px;
 
   border: none;
   border-radius: 100px;
