@@ -169,7 +169,7 @@ body > input[type="radio"] {
   line-height: 18px;
 }
 
-.header-navigation-item > a {
+.header-navigation-link {
   padding: 6px 14px;
 
   position: relative;
@@ -184,6 +184,7 @@ body > input[type="radio"] {
 .header-right {
   float: right;
   margin-top: 23px;
+  margin-right: 2px;
 }
 
 .header-search {
@@ -191,13 +192,18 @@ body > input[type="radio"] {
   padding: 16px;
 
   position: relative;
-
   background-color: rgba(255,255,255,0.2);
   background-image: url("../img/icon_search.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   border-radius: 50%;
   cursor: pointer;
+}
+.header-search:hover {
+  background-color: #ffffff;
+}
+.header-login:hover {
+  background-color: #ffffff;
 }
 
 .header-login,
@@ -246,11 +252,11 @@ body > input[type="radio"] {
   padding-top: 8px;
   padding-right: 36px;
   padding-bottom: 8px;
-  padding-left: 44px; 
+  padding-left: 44px;
 }
 
-.basket-full .header-basket {
-  padding-right: 17px;
+.header-basket-wrapper .header-basket {
+  padding-right: 32px;
 }
 
 .header-basket::before {
@@ -309,6 +315,15 @@ body > input[type="radio"] {
   margin-left: 21px;
 }
 
+.banner-raspberries-p,
+.banner-chocolate-p {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  height: 44px;
+  overflow: hidden;
+}
+
 .block-header > p {
   color: #FFF;
   font-size: 18px;
@@ -322,10 +337,27 @@ body > input[type="radio"] {
   background-position: 0px -242px;
 }
 
+.banner-raspberries h2 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 500;
+  height: 41px;
+  overflow: hidden;
+  width: 90%;
+}
+
 .banner-chocolate {
   float: right;
 
   background-position: -1px -3px;
+}
+.banner-chocolate h2 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 500;
+  height: 41px;
+  overflow: hidden;
+  width: 90%;
 }
 
 .products {
@@ -476,7 +508,8 @@ body > input[type="radio"] {
   background-image: url("../img/bg_info.jpg");
   background-repeat: repeat;
   background-position: -1px -5px;
-  border-radius: 10px;
+  padding: 24px 20px 7px;
+  border-radius: 20px;
 }
 
 .information::after {
@@ -486,30 +519,33 @@ body > input[type="radio"] {
 }
 
 .information-title {
-  margin-bottom: 10px;
-  margin-left: 21px;
-  padding-top: 26px;
-
-  color: #323232;
   font-size: 24px;
-  font-weight: 600;
   line-height: 30px;
-  word-spacing: 1px;
+  color: #323232;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 9px;
+  padding-right: 40px;
+}
+
+.information-block {
+  display: inline-block;
+  vertical-align: top;
 }
 
 .information-block:nth-child(1n) {
-  float: right;
-  width: 483px;
-  margin-right: 20px;
+  /*float: right;*/
+  width: 480px;
+  /*margin-right: 20px;*/
   margin-bottom: 8px;
-  padding-left: 57px;
+  padding-left: 80px;
 }
 
 .information-block:nth-child(2n) {
-  float: left;
-  width: 483px;
+  /*float: left;*/
+  width: 480px;
   margin-bottom: 10px;
-  margin-left: 20px;
+  /*margin-left: 20px;*/
   padding-left: 57px;
 }
 
@@ -524,18 +560,22 @@ body > input[type="radio"] {
 
 .information-ice {
   background: url("../img/icon_ice.svg") no-repeat;
+  background-position: 0 4px;
 }
 
 .information-cow {
   background: url("../img/icon_cow.svg") no-repeat;
+  background-position: 26px 4px;
 }
 
 .information-sheet {
   background: url("../img/icon_sheet.svg") no-repeat;
+  background-position: 0 4px;
 }
 
 .information-th {
   background: url("../img/icon_thermometr.svg") no-repeat;
+  background-position: 26px 4px;
 }
 
 .blog {
@@ -611,8 +651,6 @@ body > input[type="radio"] {
 .delivery input[type="text"] {
   width: 368px;
   padding: 9px 14px;
-  //padding-top: 5px;
-  //padding-bottom: 13px;
 
   color: #323232;
   font-size: 16px;
@@ -655,16 +693,13 @@ body > input[type="radio"] {
   padding-bottom: 30px;
   margin-top: 60px;
   margin-bottom: 60px;
-
   position: absolute;
-  bottom: 0px;
+  bottom: 7px;
   right: 0px;
-
   color: #343434;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-
   background-color: #fff;
   border-radius: 15px;
 }
@@ -693,7 +728,7 @@ body > input[type="radio"] {
 }
 
 .address > .btn {
-  margin-top: 24px;
+  margin-top: 10px;
   margin-left: 0px;
   padding-right: 27px;
   padding-left: 27px;  
@@ -915,7 +950,7 @@ body > input[type="radio"] {
     /* for FF */
   -moz-appearance: none;
   text-indent: 0.01px; 
-  text-overflow: ""
+  text-overflow: "";
   /* for IE */
   -ms-appearance: none;
 }
@@ -1456,7 +1491,7 @@ body > input[type="radio"] {
   background-color: rgba(53, 53, 53, .2);
 }
 
-.submenu-title > a {
+.submenu-link-new {
   display: inline-block;
   vertical-align: top;
   width: 100%;
@@ -1474,7 +1509,7 @@ body > input[type="radio"] {
        box-sizing: border-box;
 }
 
-.submenu-item > a {
+.submenu-link {
   display: inline-block;
   vertical-align: top;
   width: 100%;
@@ -1508,8 +1543,12 @@ body > input[type="radio"] {
 }
 
 .header-navigation-item:active > a {
+  /*background-color: #ededed;*/
+  /*box-shadow: inset 0 2px 1px 0 #696969;*/
+}
+.header-navigation-link:active {
   background-color: #ededed;
-  box-shadow: inset 0px 2px 1px 0 #696969;
+  box-shadow: inset 0 2px 1px 0 #696969;
 }
 
 .header-navigation-item:hover .submenu {
@@ -1972,11 +2011,17 @@ textarea:focus {
   line-height: 24px;
 }
 
-.basket-full:hover .header-basket-form {
+.header-basket-wrapper:hover .header-basket-form {
   display: block;
 }
 
-.basket-full:hover .header-basket::before {
+.header-basket.active {
+  background-color: #ffffff;
+  color: #000000;
+  padding-left: 43px;
+  padding-right: 17px;
+}
+.header-basket.active:before {
   background-image: url("../img/sprites.png");
   background-repeat: no-repeat;
   background-position: -67px -708px;
@@ -1984,7 +2029,7 @@ textarea:focus {
 
 /* LINK DECORATION UNDERLINE */
 
-.header-navigation-item > a::after {
+.header-navigation-link::after {
   content: "";
   display: block;
   width: -webkit-calc(100% - 28px);
@@ -2055,10 +2100,11 @@ textarea:focus {
 
 .submenu-item .this-page {
   background-color: #d07058;
+  color: #ffffff;
   cursor: inherit;
 }
 
-.submenu-item .this-page:hover,
-.submenu-item .this-page:active {
-  background-color: #d07058;
-}
+/*.submenu-item .this-page:hover,*/
+/*.submenu-item .this-page:active {*/
+  /*background-color: #d07058;*/
+/*}*/
